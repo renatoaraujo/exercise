@@ -28,7 +28,7 @@ Make this applicattion run in a container, using Docker.
 - Make this endpoing to respond something like:
 ```json
 {
-    persons: [
+    "persons": [
         {
             "id": "1",
             "name": "John Doe"
