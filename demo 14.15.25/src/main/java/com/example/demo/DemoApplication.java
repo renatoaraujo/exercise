@@ -38,6 +38,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
+
 	@GetMapping("/ping")
 	public PingResponse ping() {
 		return new PingResponse("pong");
@@ -52,14 +53,12 @@ public class DemoApplication {
 
 		}
 
-		public String getResponse() {
+		public String getMessage() {
 			return message;
 		}
 
-		public void setResponse(String message) {
+		public void setMessage(String message) {
 			this.message = message;
 		}
-
-
 	}
 }
